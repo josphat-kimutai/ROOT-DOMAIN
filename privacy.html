@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — ArchieTech</title>
+    <meta name="facebook-domain-verification" content="mpernw3cnvc86gbpg4i84mc1pyxh1x" />
+    <meta name="description" content="Privacy Policy for ArchieTech. Learn how we collect, use, and protect your data across our AI, bot, and payment services.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://archietech.app/privacy">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F427;</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#0a0e17;--card:#1a1f2e;--green:#00ff88;--green2:#00cc6a;--purple:#8b5cf6;--cyan:#06b6d4;--text:#e2e8f0;--text2:#94a3b8;--border:#1e293b}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+        .bg-grid{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;background-image:linear-gradient(rgba(139,92,246,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.03) 1px,transparent 1px);background-size:60px 60px}
+        .container{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:20px}
+        .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:rgba(10,14,23,.85);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:16px;margin-bottom:40px;position:sticky;top:12px;z-index:50}
+        .nav-brand{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
+        .nav-links{display:flex;gap:6px;align-items:center}
+        .nav-links a{color:var(--text2);text-decoration:none;font-size:.8rem;padding:6px 14px;border-radius:10px;transition:all .3s ease;font-weight:500}
+        .nav-links a:hover{color:var(--purple);background:rgba(139,92,246,.08)}
+        .nav-links a.active{color:var(--purple);background:rgba(139,92,246,.1)}
+        .page-header{text-align:center;margin-bottom:50px;padding-top:20px}
+        .page-icon{font-size:3rem;margin-bottom:16px}
+        .page-title{font-family:'JetBrains Mono',monospace;font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .page-subtitle{color:var(--text2);font-size:.9rem;margin-top:10px}
+        .last-updated{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:6px 14px;border-radius:20px;margin-top:16px;background:rgba(139,92,246,.06);color:var(--purple);border:1px solid rgba(139,92,246,.15)}
+        .content{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:40px;margin-bottom:40px}
+        .content h2{font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:var(--purple);margin:32px 0 16px;display:flex;align-items:center;gap:10px}
+        .content h2:first-child{margin-top:0}
+        .content h2::before{content:'#';font-weight:bold;opacity:.5}
+        .content p{color:var(--text2);font-size:.88rem;line-height:1.8;margin-bottom:12px}
+        .content ul,.content ol{color:var(--text2);font-size:.88rem;line-height:1.8;margin:8px 0 16px 24px}
+        .content li{margin-bottom:6px}
+        .content strong{color:var(--text);font-weight:600}
+        .content a{color:var(--purple);text-decoration:none;border-bottom:1px solid rgba(139,92,246,.2);transition:border-color .2s}
+        .content a:hover{border-color:var(--purple)}
+        .data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.84rem}
+        .data-table th{background:rgba(139,92,246,.08);color:var(--purple);text-align:left;padding:10px 14px;font-family:'JetBrains Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:1px;border:1px solid var(--border)}
+        .data-table td{padding:10px 14px;border:1px solid var(--border);color:var(--text2)}
+        .data-table tr:hover td{background:rgba(139,92,246,.03)}
+        .highlight-box{background:rgba(139,92,246,.04);border:1px solid rgba(139,92,246,.15);border-radius:12px;padding:16px 20px;margin:16px 0;font-size:.85rem;color:var(--text2)}
+        .footer{text-align:center;padding:30px 20px;border-top:1px solid var(--border)}
+        .footer p{font-size:.78rem;color:var(--text2);line-height:1.8}
+        .footer a{color:var(--purple);text-decoration:none}
+        .footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:10px}
+        .footer-links a{font-size:.78rem;color:var(--text2)}
+        .footer-links a:hover{color:var(--purple)}
+        @media(max-width:768px){.content{padding:24px}.page-title{font-size:1.6rem}.navbar{flex-direction:column;gap:10px;padding:10px 16px}.data-table{font-size:.75rem}.data-table th,.data-table td{padding:8px 10px}}
+    </style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+    <nav class="navbar">
+        <a href="/" class="nav-brand">&#x1F427; ArchieTech</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy" class="active">Privacy</a>
+        </div>
+    </nav>
+    <div class="page-header">
+        <div class="page-icon">&#x1F6E1;&#xFE0F;</div>
+        <div class="page-title">Privacy Policy</div>
+        <div class="page-subtitle">How we collect, use, and protect your information</div>
+        <div class="last-updated">&#x1F4C5; Last updated: January 2025</div>
+    </div>
+    <div class="content">
+        <h2>1. Overview</h2>
+        <p><strong>Archie Tech Nexus</strong> ("ArchieTech", "we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website archietech.app, its subdomains, and our associated services.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We collect different types of information depending on how you interact with our services:</p>
+        <table class="data-table">
+            <thead>
+                <tr><th>Data Type</th><th>Examples</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Account Data</strong></td><td>Username, email, phone number</td><td>Authentication &amp; communication</td></tr>
+                <tr><td><strong>Payment Data</strong></td><td>M-Pesa phone number, transaction IDs</td><td>Processing payments via Daraja API</td></tr>
+                <tr><td><strong>Usage Data</strong></td><td>Pages visited, features used, timestamps</td><td>Service improvement &amp; analytics</td></tr>
+                <tr><td><strong>Device Data</strong></td><td>IP address, browser type, OS</td><td>Security &amp; troubleshooting</td></tr>
+                <tr><td><strong>API Data</strong></td><td>API keys, request logs, webhook payloads</td><td>Service delivery &amp; debugging</td></tr>
+                <tr><td><strong>Bot Interaction Data</strong></td><td>WhatsApp messages to our bots</td><td>Bot functionality &amp; response</td></tr>
+            </tbody>
+        </table>
+
+        <h2>3. How We Use Your Data</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Provide, operate, and maintain our services</li>
+            <li>Process M-Pesa payments and settlements</li>
+            <li>Respond to your inquiries and provide customer support</li>
+            <li>Send service-related notifications and updates</li>
+            <li>Monitor and analyze usage patterns to improve our services</li>
+            <li>Detect, prevent, and address technical issues and security threats</li>
+            <li>Comply with legal obligations and enforce our Terms of Service</li>
+        </ul>
+
+        <h2>4. Payment Data (M-Pesa / Daraja)</h2>
+        <p>When you use our payment integration services:</p>
+        <ul>
+            <li>M-Pesa transactions are processed securely through Safaricom's official Daraja API</li>
+            <li>We store transaction references, amounts, and status for reconciliation purposes</li>
+            <li>We do <strong>not</strong> store your M-Pesa PIN or full account details</li>
+            <li>Payment data is encrypted in transit and at rest</li>
+            <li>Transaction records are retained as required by Kenyan financial regulations</li>
+        </ul>
+        <div class="highlight-box">&#x1F512; <strong>Payment Security:</strong> All payment processing is handled through Safaricom's secure Daraja API. We never have access to your M-Pesa PIN.</div>
+
+        <h2>5. WhatsApp &amp; Bot Data</h2>
+        <p>When you interact with our WhatsApp bots (Archie MD):</p>
+        <ul>
+            <li>Messages sent to our bot are processed to generate responses</li>
+            <li>We may store conversation logs for service improvement and debugging</li>
+            <li>Your phone number is used to identify your session</li>
+            <li>We do not sell or share your WhatsApp conversations with third parties</li>
+            <li>Bot data is subject to WhatsApp's own Privacy Policy and Meta's Platform Terms</li>
+        </ul>
+
+        <h2>6. Data Sharing</h2>
+        <p>We do <strong>not sell</strong> your personal data. We may share information with:</p>
+        <ul>
+            <li><strong>Safaricom</strong> &mdash; For M-Pesa transaction processing via Daraja API</li>
+            <li><strong>Meta/WhatsApp</strong> &mdash; For WhatsApp Cloud API bot services</li>
+            <li><strong>Service Providers</strong> &mdash; Hosting, analytics, and infrastructure partners who assist in operating our services</li>
+            <li><strong>Legal Authorities</strong> &mdash; When required by law or to protect rights, safety, or property</li>
+        </ul>
+
+        <h2>7. Data Security</h2>
+        <p>We implement appropriate technical and organizational security measures including:</p>
+        <ul>
+            <li>SSL/TLS encryption for all data in transit</li>
+            <li>Secure server infrastructure hosted on encrypted VPS instances</li>
+            <li>API key authentication and rate limiting</li>
+            <li>Regular security audits and monitoring</li>
+            <li>Access controls limiting data access to authorized personnel only</li>
+        </ul>
+        <p>While we strive to protect your data, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>Under the <strong>Kenya Data Protection Act, 2019</strong> and other applicable laws, you have the right to:</p>
+        <ul>
+            <li><strong>Access</strong> &mdash; Request a copy of the personal data we hold about you</li>
+            <li><strong>Correction</strong> &mdash; Request correction of inaccurate or incomplete data</li>
+            <li><strong>Deletion</strong> &mdash; Request deletion of your personal data (subject to legal retention requirements)</li>
+            <li><strong>Objection</strong> &mdash; Object to processing of your data in certain circumstances</li>
+            <li><strong>Portability</strong> &mdash; Request transfer of your data in a structured, machine-readable format</li>
+        </ul>
+        <p>To exercise these rights, contact us via WhatsApp at <a href="https://wa.me/254703662179" target="_blank">+254 703 662 179</a>.</p>
+
+        <h2>9. Cookies &amp; Tracking</h2>
+        <p>Our website may use minimal cookies and local storage for:</p>
+        <ul>
+            <li>Remembering your preferences (e.g., music toggle state)</li>
+            <li>Session management for authenticated services</li>
+            <li>Basic analytics to understand traffic patterns</li>
+        </ul>
+        <p>We do not use invasive tracking cookies or third-party advertising trackers.</p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>Our services are not directed at children under 13. We do not knowingly collect personal data from children. If you believe we have collected data from a child, please contact us immediately.</p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. We encourage you to review this page periodically.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or your data, contact us:</p>
+        <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/254703662179" target="_blank">+254 703 662 179</a></li>
+            <li><strong>Website:</strong> <a href="https://archietech.app">archietech.app</a></li>
+            <li><strong>Quick Message:</strong> <a href="https://wa.me/message/M2QIPWNRZTNHF1" target="_blank">Send us a message</a></li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2026 <a href="https://archietech.app">Archie Tech Nexus</a> &mdash; All rights reserved</p>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="https://wa.me/message/M2QIPWNRZTNHF1" target="_blank">Contact Us</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchieTech — Home</title>
+    <meta name="facebook-domain-verification" content="mpernw3cnvc86gbpg4i84mc1pyxh1x" />
+    <meta name="description" content="ArchieTech - Your gateway to AI, Bots, Web Services & Developer Community. Building the future with code.">
+    <meta name="keywords" content="ArchieTech, AI, WhatsApp Bot, Web Services, M-Pesa, Developer Community, Kenya Tech">
+    <meta name="author" content="Archie Tech Nexus">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archietech.app/">
+    <meta property="og:title" content="ArchieTech — Building the Future with Code">
+    <meta property="og:description" content="AI, Bots, Web Services & Developer Community. Powered by Linux, secured by SSL.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/300px-Tux.svg.png">
+    <meta property="og:site_name" content="ArchieTech">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ArchieTech — Building the Future with Code">
+    <meta name="twitter:description" content="AI, Bots, Web Services & Developer Community.">
+    <link rel="canonical" href="https://archietech.app/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F427;</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#0a0e17;--bg2:#111827;--card:#1a1f2e;--card-hover:#222842;--green:#00ff88;--green2:#00cc6a;--blue:#3b82f6;--purple:#8b5cf6;--pink:#ec4899;--cyan:#06b6d4;--orange:#f59e0b;--red:#ef4444;--text:#e2e8f0;--text2:#94a3b8;--border:#1e293b}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+        .bg-grid{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;background-image:linear-gradient(rgba(0,255,136,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,0.03) 1px,transparent 1px);background-size:60px 60px;animation:gridMove 20s linear infinite}
+        @keyframes gridMove{0%{transform:translate(0,0)}100%{transform:translate(60px,60px)}}
+        .glow-orb{position:fixed;border-radius:50%;filter:blur(120px);opacity:.15;z-index:0;animation:orbFloat 8s ease-in-out infinite alternate;pointer-events:none}
+        .glow-orb.o1{width:500px;height:500px;background:var(--green);top:-100px;left:-100px}
+        .glow-orb.o2{width:400px;height:400px;background:var(--purple);bottom:-100px;right:-100px;animation-delay:2s}
+        .glow-orb.o3{width:300px;height:300px;background:var(--blue);top:50%;left:50%;animation-delay:4s}
+        @keyframes orbFloat{0%{transform:translate(0,0) scale(1)}100%{transform:translate(30px,-30px) scale(1.1)}}
+        .particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:hidden}
+        .particle{position:absolute;width:2px;height:2px;background:var(--green);border-radius:50%;opacity:0;animation:particleFloat linear infinite}
+        @keyframes particleFloat{0%{opacity:0;transform:translateY(100vh) scale(0)}10%{opacity:.6}90%{opacity:.6}100%{opacity:0;transform:translateY(-10vh) scale(1)}}
+        .container{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:20px}
+        .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:rgba(10,14,23,.85);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:16px;margin-bottom:10px;position:sticky;top:12px;z-index:50}
+        .nav-brand{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
+        .nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+        .nav-links a{color:var(--text2);text-decoration:none;font-size:.8rem;padding:6px 14px;border-radius:10px;transition:all .3s ease;font-weight:500}
+        .nav-links a:hover{color:var(--green);background:rgba(0,255,136,.08)}
+        .nav-cta{background:linear-gradient(135deg,var(--green2),var(--green))!important;color:var(--bg)!important;font-weight:600!important;padding:6px 16px!important}
+        .nav-cta:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(0,255,136,.3)}
+        .hero{text-align:center;padding:50px 20px 40px;animation:fadeUp .8s ease-out}
+        @keyframes fadeUp{0%{opacity:0;transform:translateY(30px)}100%{opacity:1;transform:translateY(0)}}
+        @keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:30px;padding:6px 18px;margin-bottom:20px;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--green)}
+        .hero-badge .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulseDot 2s ease-in-out infinite}
+        @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+        .tux-container{display:flex;justify-content:center;align-items:center;gap:24px;margin-bottom:20px}
+        .tux-img{width:85px;height:85px;object-fit:contain;filter:drop-shadow(0 0 25px rgba(0,255,136,.3));animation:tuxBounce 3s ease-in-out infinite}
+        .tux-img.right{animation-delay:1.5s}
+        @keyframes tuxBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+        .logo-text{font-family:'JetBrains Mono',monospace;font-size:3.8rem;font-weight:800;background:linear-gradient(135deg,var(--green),var(--cyan),var(--blue),var(--purple));background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-1px;animation:gradientShift 6s ease infinite}
+        @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+        .tagline{font-size:1.1rem;color:var(--text2);margin-top:10px;font-family:'JetBrains Mono',monospace}
+        .tagline .cursor{animation:blink 1s step-end infinite;color:var(--green)}
+        @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+        .hero-subtitle{font-size:.95rem;color:var(--text2);margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.6}
+        .terminal-bar{display:inline-flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:30px;padding:10px 24px;margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+        .terminal-bar .dots{display:flex;gap:5px}
+        .terminal-bar .dots span{width:10px;height:10px;border-radius:50%}
+        .terminal-bar .dots span:nth-child(1){background:#ef4444}
+        .terminal-bar .dots span:nth-child(2){background:#f59e0b}
+        .terminal-bar .dots span:nth-child(3){background:#22c55e}
+        .stats-bar{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin:30px 0 10px}
+        .stat-item{text-align:center}
+        .stat-num{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .stat-label{font-size:.75rem;color:var(--text2);margin-top:2px;text-transform:uppercase;letter-spacing:1px}
+        .section{margin:50px 0 30px;animation:fadeIn .6s ease-out}
+        .section-title{display:flex;align-items:center;gap:12px;margin-bottom:24px;font-family:'JetBrains Mono',monospace;font-size:1rem;color:var(--green)}
+        .section-title::before{content:'>';font-weight:bold}
+        .section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--green2),transparent)}
+        .grid{display:grid;gap:16px}
+        .grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+        .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;text-decoration:none;color:var(--text);transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px}
+        .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent,var(--green));transform:scaleX(0);transition:transform .3s ease;transform-origin:left}
+        .card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(0,255,136,.06),transparent 60%);opacity:0;transition:opacity .3s ease;pointer-events:none}
+        .card:hover{transform:translateY(-4px);border-color:var(--accent,var(--green));box-shadow:0 20px 40px rgba(0,0,0,.3),0 0 30px rgba(0,255,136,.05);background:var(--card-hover)}
+        .card:hover::before{transform:scaleX(1)}
+        .card:hover::after{opacity:1}
+        .card-icon{font-size:2.2rem;line-height:1}
+        .card-title{font-weight:700;font-size:1.15rem}
+        .card-desc{font-size:.85rem;color:var(--text2);line-height:1.6}
+        .card-tag{display:inline-flex;align-items:center;gap:4px;font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:4px 10px;border-radius:20px;width:fit-content;background:rgba(0,255,136,.1);color:var(--green);border:1px solid rgba(0,255,136,.2)}
+        .card.ai{--accent:var(--purple)}.card.ai .card-tag{background:rgba(139,92,246,.1);color:var(--purple);border-color:rgba(139,92,246,.2)}
+        .card.devs{--accent:var(--blue)}.card.devs .card-tag{background:rgba(59,130,246,.1);color:var(--blue);border-color:rgba(59,130,246,.2)}
+        .card.bot{--accent:var(--green)}
+        .card.bot2{--accent:var(--cyan)}.card.bot2 .card-tag{background:rgba(6,182,212,.1);color:var(--cyan);border-color:rgba(6,182,212,.2)}
+        .card.cpanel{--accent:var(--orange)}.card.cpanel .card-tag{background:rgba(245,158,11,.1);color:var(--orange);border-color:rgba(245,158,11,.2)}
+        .card.web{--accent:var(--pink)}.card.web .card-tag{background:rgba(236,72,153,.1);color:var(--pink);border-color:rgba(236,72,153,.2)}
+        .wa-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+        .wa-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--text);transition:all .3s ease;display:flex;align-items:center;gap:14px}
+        .wa-card:hover{transform:translateY(-3px);border-color:#25d366;box-shadow:0 10px 30px rgba(0,0,0,.2),0 0 20px rgba(37,211,102,.08);background:var(--card-hover)}
+        .wa-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+        .wa-icon.green{background:rgba(37,211,102,.15)}
+        .wa-card-text .wa-label{font-weight:600;font-size:.9rem}
+        .wa-card-text .wa-sub{font-size:.75rem;color:var(--text2);margin-top:2px;font-family:'JetBrains Mono',monospace}
+        .wa-arrow{margin-left:auto;color:var(--text2);transition:transform .3s}
+        .wa-card:hover .wa-arrow{transform:translateX(4px);color:var(--green)}
+        .ch-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--text);transition:all .3s ease;display:flex;align-items:center;gap:14px}
+        .ch-card:hover{transform:translateY(-3px);border-color:var(--cyan);box-shadow:0 10px 30px rgba(0,0,0,.2),0 0 15px rgba(6,182,212,.06);background:var(--card-hover)}
+        .ch-icon{width:44px;height:44px;border-radius:12px;background:rgba(6,182,212,.12);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+        .ch-card-text .ch-label{font-weight:600;font-size:.9rem}
+        .ch-card-text .ch-sub{font-size:.75rem;color:var(--text2);margin-top:2px}
+        .ch-arrow{margin-left:auto;color:var(--text2);transition:transform .3s}
+        .ch-card:hover .ch-arrow{transform:translateX(4px);color:var(--cyan)}
+        .tux-gallery{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:40px 0 20px}
+        .tux-gallery img{width:70px;height:70px;object-fit:contain;filter:drop-shadow(0 0 15px rgba(0,255,136,.2)) grayscale(20%);transition:all .3s ease;border-radius:8px}
+        .tux-gallery img:hover{transform:scale(1.2) rotate(-5deg);filter:drop-shadow(0 0 30px rgba(0,255,136,.5)) grayscale(0%)}
+        .footer{text-align:center;padding:40px 20px 30px;margin-top:40px;border-top:1px solid var(--border)}
+        .footer p{font-size:.8rem;color:var(--text2);line-height:1.8}
+        .footer .footer-tux{font-size:1.5rem;margin-bottom:8px}
+        .footer a{color:var(--green);text-decoration:none;transition:color .2s}
+        .footer a:hover{color:var(--cyan)}
+        .footer .tech-stack{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:14px}
+        .footer .tech-badge{font-family:'JetBrains Mono',monospace;font-size:.65rem;padding:4px 10px;border-radius:20px;background:rgba(0,255,136,.06);color:var(--text2);border:1px solid var(--border);transition:all .3s}
+        .footer .tech-badge:hover{border-color:var(--green);color:var(--green)}
+        .footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:14px}
+        .footer-links a{font-size:.78rem;color:var(--text2)}
+        .footer-links a:hover{color:var(--green)}
+        .music-toggle{position:fixed;bottom:24px;right:24px;z-index:100;width:50px;height:50px;border-radius:50%;border:2px solid var(--green);background:var(--card);color:var(--green);font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+        .music-toggle:hover{background:var(--green);color:var(--bg);transform:scale(1.1)}
+        .music-toggle.playing{animation:pulse 2s ease-in-out infinite;background:rgba(0,255,136,.15)}
+        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,255,136,.3)}50%{box-shadow:0 0 0 12px rgba(0,255,136,0)}}
+        .scroll-top{position:fixed;bottom:24px;right:84px;z-index:100;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;opacity:0;pointer-events:none}
+        .scroll-top.show{opacity:1;pointer-events:auto}
+        .scroll-top:hover{border-color:var(--green);color:var(--green);transform:scale(1.1)}
+        .ssl-badge{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:6px 14px;border-radius:20px;margin-top:16px;background:rgba(34,197,94,.08);color:#22c55e;border:1px solid rgba(34,197,94,.2)}
+        @media(max-width:768px){.logo-text{font-size:2.2rem}.tux-img{width:55px;height:55px}.grid-3{grid-template-columns:1fr}.wa-grid{grid-template-columns:1fr}.hero{padding:40px 16px 30px}.tux-gallery img{width:50px;height:50px}.navbar{padding:10px 16px;flex-direction:column;gap:10px}.stats-bar{gap:20px}.stat-num{font-size:1.4rem}}
+        @media(max-width:480px){.logo-text{font-size:1.8rem}.tagline{font-size:.9rem}.nav-links a{font-size:.72rem;padding:5px 10px}}
+    </style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="glow-orb o1"></div>
+<div class="glow-orb o2"></div>
+<div class="glow-orb o3"></div>
+<div class="particles" id="particles"></div>
+<audio id="bgMusic" loop preload="auto"><source src="https://files.catbox.moe/m82x9m.mp4" type="audio/mp4"></audio>
+<div class="container">
+    <nav class="navbar">
+        <a href="/" class="nav-brand">&#x1F427; ArchieTech</a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#bots">Bots</a>
+            <a href="#helplines">Contact</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="https://wa.me/message/M2QIPWNRZTNHF1" target="_blank" class="nav-cta">&#x1F4AC; Chat</a>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-badge"><span class="pulse-dot"></span> All systems operational</div>
+        <div class="tux-container">
+            <img class="tux-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png" alt="Tux">
+            <div>
+                <div class="logo-text">ArchieTech</div>
+                <div class="tagline">$ building the future with code<span class="cursor">_</span></div>
+            </div>
+            <img class="tux-img right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/150px-Tux_Mono.svg.png" alt="Tux Mono">
+        </div>
+        <div class="hero-subtitle">AI-powered tools, WhatsApp automation, payment integrations &amp; developer community. Everything you need to build, deploy &amp; scale.</div>
+        <div class="terminal-bar">
+            <span class="dots"><span></span><span></span><span></span></span>
+            <span>~/archietech <span style="color:var(--text2)">&rarr;</span> services --list-all</span>
+        </div>
+        <div class="ssl-badge">&#x1F512; SSL Secured &bull; Let's Encrypt &bull; archietech.app</div>
+        <div class="stats-bar">
+            <div class="stat-item"><div class="stat-num" data-count="6">0</div><div class="stat-label">Services</div></div>
+            <div class="stat-item"><div class="stat-num" data-count="99.9">0</div><div class="stat-label">% Uptime</div></div>
+            <div class="stat-item"><div class="stat-num" data-count="24">0</div><div class="stat-label">/7 Support</div></div>
+            <div class="stat-item"><div class="stat-num" data-count="4">0</div><div class="stat-label">Countries</div></div>
+        </div>
+    </header>
+    <section class="section" id="services">
+        <div class="section-title">OUR_SERVICES</div>
+        <div class="grid grid-3">
+            <a href="https://ai.archietech.app/" target="_blank" class="card ai">
+                <div class="card-icon">&#x1F916;</div>
+                <div class="card-title">ARCHIE AI</div>
+                <div class="card-desc">Intelligent AI assistant powered by cutting-edge models. Chat, generate, create &mdash; all in one place.</div>
+                <div class="card-tag">&#x1F7E2; LIVE &mdash; ai.archietech.app</div>
+            </a>
+            <a href="https://devs-community.archietech.app/" target="_blank" class="card devs">
+                <div class="card-icon">&#x1F468;&#x200D;&#x1F4BB;</div>
+                <div class="card-title">Developers Community</div>
+                <div class="card-desc">Join a thriving community of developers. Collaborate, share knowledge, and build amazing projects together.</div>
+                <div class="card-tag">&#x1F7E2; LIVE &mdash; devs-community.archietech.app</div>
+            </a>
+            <a href="https://webservices.archietech.app/" target="_blank" class="card web">
+                <div class="card-icon">&#x26A1;</div>
+                <div class="card-title">Web Services</div>
+                <div class="card-desc">Powerful APIs and microservices. M-Pesa integration, webhooks, payment processing and more.</div>
+                <div class="card-tag">&#x1F7E2; LIVE &mdash; webservices.archietech.app</div>
+            </a>
+        </div>
+    </section>
+    <section class="section" id="bots">
+        <div class="section-title">BOT_PLATFORMS</div>
+        <div class="grid grid-3">
+            <a href="https://archie-md.archietech.app/" target="_blank" class="card bot">
+                <div class="card-icon">&#x1F427;</div>
+                <div class="card-title">Main Bot Site</div>
+                <div class="card-desc">Primary WhatsApp bot deployment &mdash; Archie MD. Feature-rich, always online, production-ready.</div>
+                <div class="card-tag">&#x25CF; MAIN &mdash; archie-md.archietech.app</div>
+            </a>
+            <a href="https://archie-md2.archietech.app/" target="_blank" class="card bot2">
+                <div class="card-icon">&#x1F504;</div>
+                <div class="card-title">Backup Bot Site</div>
+                <div class="card-desc">Redundant bot instance for maximum uptime. Automatic failover keeps your services running 24/7.</div>
+                <div class="card-tag">&#x25CF; BACKUP &mdash; archie-md2.archietech.app</div>
+            </a>
+            <a href="https://cpanel.archietech.app/" target="_blank" class="card cpanel">
+                <div class="card-icon">&#x1F5A5;&#xFE0F;</div>
+                <div class="card-title">VPS cPanel</div>
+                <div class="card-desc">Full server management dashboard. Monitor processes, manage deployments, and control your infrastructure.</div>
+                <div class="card-tag">&#x25CF; ADMIN &mdash; cpanel.archietech.app</div>
+            </a>
+        </div>
+    </section>
+    <section class="section" id="helplines">
+        <div class="section-title">WHATSAPP_HELPLINES</div>
+        <div class="wa-grid">
+            <a href="https://wa.me/message/M2QIPWNRZTNHF1" target="_blank" class="wa-card">
+                <div class="wa-icon green">&#x1F4AC;</div>
+                <div class="wa-card-text"><div class="wa-label">Quick Message</div><div class="wa-sub">Direct Link</div></div>
+                <div class="wa-arrow">&rarr;</div>
+            </a>
+            <a href="https://wa.me/254703662179" target="_blank" class="wa-card">
+                <div class="wa-icon green">&#x1F1F0;&#x1F1EA;</div>
+                <div class="wa-card-text"><div class="wa-label">Kenya Helpline</div><div class="wa-sub">+254 703 662 179</div></div>
+                <div class="wa-arrow">&rarr;</div>
+            </a>
+            <a href="https://wa.me/237687066830" target="_blank" class="wa-card">
+                <div class="wa-icon green">&#x1F1E8;&#x1F1F2;</div>
+                <div class="wa-card-text"><div class="wa-label">Cameroon Helpline</div><div class="wa-sub">+237 687 066 830</div></div>
+                <div class="wa-arrow">&rarr;</div>
+            </a>
+            <a href="https://wa.me/15558137509" target="_blank" class="wa-card">
+                <div class="wa-icon green">&#x1F1FA;&#x1F1F8;</div>
+                <div class="wa-card-text"><div class="wa-label">USA Helpline</div><div class="wa-sub">+1 555 813 7509</div></div>
+                <div class="wa-arrow">&rarr;</div>
+            </a>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-title">WHATSAPP_CHANNELS</div>
+        <div class="wa-grid">
+            <a href="https://whatsapp.com/channel/0029VaYpDLx4tRrrrXsOvZ3U" target="_blank" class="ch-card">
+                <div class="ch-icon">&#x1F4E2;</div>
+                <div class="ch-card-text"><div class="ch-label">Main Channel</div><div class="ch-sub">Official updates &amp; announcements</div></div>
+                <div class="ch-arrow">&rarr;</div>
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb77n0zB4hdVIRazSQ1X" target="_blank" class="ch-card">
+                <div class="ch-icon">&#x1F4E1;</div>
+                <div class="ch-card-text"><div class="ch-label">Tech Updates</div><div class="ch-sub">Latest tech news &amp; tips</div></div>
+                <div class="ch-arrow">&rarr;</div>
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb6dgrn3rZZXIpZFOz1x" target="_blank" class="ch-card">
+                <div class="ch-icon">&#x1F6E0;&#xFE0F;</div>
+                <div class="ch-card-text"><div class="ch-label">Dev Channel</div><div class="ch-sub">Developer resources &amp; tutorials</div></div>
+                <div class="ch-arrow">&rarr;</div>
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbBguIyDTkK7HNKtY81w" target="_blank" class="ch-card">
+                <div class="ch-icon">&#x1F30E;</div>
+                <div class="ch-card-text"><div class="ch-label">Community</div><div class="ch-sub">Join the global community</div></div>
+                <div class="ch-arrow">&rarr;</div>
+            </a>
+        </div>
+    </section>
+    <div class="tux-gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png" alt="Tux Classic" title="Classic Tux">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/150px-Tux_Mono.svg.png" alt="Tux Mono" title="Mono Tux">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/150px-NewTux.svg.png" alt="New Tux" title="New Tux">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tux.png/150px-Tux.png" alt="Tux 3D" title="3D Tux">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Tux_Paint_penguin.svg/150px-Tux_Paint_penguin.svg.png" alt="Tux Paint" title="Tux Paint">
+    </div>
+    <footer class="footer">
+        <div class="footer-tux">&#x1F427;</div>
+        <p>&copy; 2026 <a href="https://archietech.app">Archie Tech Nexus</a> &mdash; All rights reserved</p>
+        <p style="margin-top:4px">Powered by Linux &bull; Secured with Let's Encrypt &bull; Served by Nginx</p>
+        <div class="footer-links">
+            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="https://wa.me/message/M2QIPWNRZTNHF1" target="_blank">Contact Us</a>
+        </div>
+        <div class="tech-stack">
+            <span class="tech-badge">&#x1F427; Linux</span>
+            <span class="tech-badge">&#x1F512; SSL/TLS</span>
+            <span class="tech-badge">&#x26A1; Nginx</span>
+            <span class="tech-badge">&#x1F7E2; Node.js</span>
+            <span class="tech-badge">&#x1F40D; Python</span>
+            <span class="tech-badge">&#x1F504; PM2</span>
+        </div>
+    </footer>
+</div>
+<button class="music-toggle" id="musicBtn" title="Toggle Background Music">&#x1F509;</button>
+<button class="scroll-top" id="scrollTopBtn" title="Back to top">&#x2191;</button>
+<script>
+(function(){
+    var pc=document.getElementById('particles');for(var i=0;i<30;i++){var p=document.createElement('div');p.className='particle';p.style.left=Math.random()*100+'%';p.style.animationDuration=(8+Math.random()*12)+'s';p.style.animationDelay=Math.random()*10+'s';p.style.width=p.style.height=(1+Math.random()*3)+'px';pc.appendChild(p)}
+    document.querySelectorAll('.card').forEach(function(card){card.addEventListener('mousemove',function(e){var r=card.getBoundingClientRect();card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%')})});
+    var counted=false;function animateCounters(){if(counted)return;counted=true;document.querySelectorAll('.stat-num').forEach(function(el){var target=parseFloat(el.dataset.count);var isFloat=target%1!==0;var duration=1500;var start=performance.now();function tick(now){var progress=Math.min((now-start)/duration,1);var ease=1-Math.pow(1-progress,3);var val=ease*target;el.textContent=isFloat?val.toFixed(1):Math.round(val);if(progress<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)})}
+    var statsObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)animateCounters()})},{threshold:0.3});document.querySelectorAll('.stats-bar').forEach(function(el){statsObs.observe(el)});
+    var audio=document.getElementById('bgMusic');var btn=document.getElementById('musicBtn');var playing=false;audio.volume=0.3;
+    function tryPlay(){audio.play().then(function(){playing=true;btn.innerHTML='&#x1F50A;';btn.classList.add('playing')}).catch(function(){})}
+    tryPlay();
+    function startOnInteract(){if(!playing)tryPlay();document.removeEventListener('click',startOnInteract);document.removeEventListener('scroll',startOnInteract);document.removeEventListener('touchstart',startOnInteract)}
+    document.addEventListener('click',startOnInteract);document.addEventListener('scroll',startOnInteract);document.addEventListener('touchstart',startOnInteract);
+    btn.addEventListener('click',function(e){e.stopPropagation();if(audio.paused){audio.play();btn.innerHTML='&#x1F50A;';btn.classList.add('playing');playing=true}else{audio.pause();btn.innerHTML='&#x1F509;';btn.classList.remove('playing');playing=false}});
+    var stb=document.getElementById('scrollTopBtn');window.addEventListener('scroll',function(){stb.classList.toggle('show',window.scrollY>400)});stb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+    var cards=document.querySelectorAll('.card,.wa-card,.ch-card');for(var i=0;i<cards.length;i++){cards[i].style.opacity='0';cards[i].style.transform='translateY(20px)';cards[i].style.transition='all .5s ease '+(i*0.05)+'s'}
+    var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';obs.unobserve(e.target)}})},{threshold:0.1});cards.forEach(function(c){obs.observe(c)});
+    var tagEl=document.querySelector('.tagline');if(tagEl){var phrases=['building the future with code','AI + automation = power','Linux is freedom','deploy, scale, repeat'];var pi=0,ci=0,deleting=false;var baseText='$ ';function typeLoop(){var phrase=phrases[pi];if(!deleting){ci++;if(ci>phrase.length){setTimeout(function(){deleting=true;typeLoop()},2000);return}}else{ci--;if(ci<0){ci=0;pi=(pi+1)%phrases.length;deleting=false}}tagEl.innerHTML=baseText+phrases[pi].substring(0,ci)+'<span class="cursor">_</span>';setTimeout(typeLoop,deleting?40:80)}setTimeout(function(){ci=0;typeLoop()},3000)}
+})();
+</script>
+</body>
+</html>
